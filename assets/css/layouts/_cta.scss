@@ -1,0 +1,27 @@
+/* =============== CTA CSS ================ */
+.cta-area{
+    background-attachment: fixed;
+}
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    .cta-left{
+        h4 {
+            font-size: 30px;
+            text-shadow: 0px 0px 5px $black;
+          }
+        p {
+            max-width: 621px;
+            font-size: 18px;
+            color: $white;
+          }
+    }
+    .cta-right{
+        p {
+            font-size: 20px;
+            color: $white;
+            margin-bottom: 26px;
+          }
+    }
+  }
+  

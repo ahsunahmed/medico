@@ -1,0 +1,95 @@
+/* =============== Footer CSS ================ */
+.footer-area{
+    background-color: $black;
+    ul{
+        li {
+            a{
+            font-size: 16px;
+            line-height: 38px;
+            font-weight: 600;
+            transition: 0.3s;
+            color: $border;
+            &:hover{
+                color: $primary_color;
+            }
+            }
+          }
+    }
+    h4 {
+        font-size: 24px;
+        color: $title_color;
+      }
+    .footer-links {
+        display: flex;
+        .footer-newsletter {
+            flex-basis: 50%;
+            border: 1px solid $black;
+            border-radius: 20px;
+            padding: 20px 40px;
+            background-color: $title_color;
+            box-shadow: 0px 0px 5px 15px $black;
+            p {
+                font-size: 18px;
+                color: $white;
+                font-weight: 300;
+                line-height: 30px;
+              }
+            .newsletter-box {
+                background: $white;
+                border: 1px solid $white;
+                border-radius: 30px;
+                position: relative;
+                margin-top: 30px;
+                padding: 2px;
+                input {
+                    padding: 10px 38px;
+                    width: 80%;
+                    font-size: 16px;
+                    border-radius: 30px;
+                    
+                  }
+                a {
+                    margin: 0;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    padding: 10px 40px;
+                    border: 1px solid $border;
+                    border-radius: 30px;
+                    font-weight: 300;
+                    &:hover{
+                        border: 1px solid $btn_color;
+                    }
+                  }
+              }
+          }
+          .footer-menu {
+            flex-basis: 20%;
+            margin: 0 auto;
+          }
+          .footer-quicklinks {
+            flex-basis: 20%;
+          }
+          
+      }
+    .footer-copyright {
+        text-align: center;
+        margin-top: 100px;
+        p {
+            font-size: 16px;
+            color: $border;
+            span {
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $bg;
+              }
+          }
+      }
+}
+
+
+
+ 
+  
+  

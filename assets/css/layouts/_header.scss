@@ -1,0 +1,112 @@
+/* ========== Header CSS ========== */
+.header-area{
+  .header-top-menu {
+    background-color: $primary_color;
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      .header-top-left ,
+      .header-top-right{
+        ul {
+          display: flex;
+          li{
+            margin-left: 30px;
+            color: $white;
+            font-weight: 600;
+            cursor: pointer;
+            }
+          
+    
+        }
+      } 
+      .header-top-right{
+        ul{
+          li{
+            a{
+              display: block;
+              color: $white;
+              font-size: 16px;
+              transition: 0.3s;
+              &:hover {
+                transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }
+  .header-bottom-menu {
+    padding: 10px 0;
+    background-color: $secondary_color;
+    .main {
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        align-items: center;
+        display: flex;
+        a {
+          span {
+            margin-left: 5px;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $white;
+          }
+        }
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        ul {
+          display: flex;
+          li {
+            margin-right: 30px;
+            position: relative;
+            &::before{
+              content: '';
+              position: absolute;
+              background-color: $title_color;
+              width: 0;
+              height: 3px;
+              top: 100%;
+              left: 0;
+              transition: 0.3s;
+            }
+            &:hover{
+              &::before{
+                width: 100%;
+              }
+            }
+            a {
+              color: $white;
+              font-size: 16px;
+              font-weight: 600;
+              display: block;
+              cursor: pointer;
+              
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
+/* =============== Sticky NavBar =============*/
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+
+
+
+

@@ -1,0 +1,509 @@
+/* ================ Responsive CSS ============== */
+/* ========= Medium Screen ========= */
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+    .main{
+        width: 970px;
+    }
+    .banner-area{
+        .banner-content{
+            max-width: 460px;
+        }
+        .banner-img{
+            width: 356px;
+        }
+    }
+    .about-area{
+        .main{
+            .about-left{
+                max-width: 600px;
+            }
+            .about-right{
+                .about-content{
+                    & > p{
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    } 
+   .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .single-service{
+            margin: 0 0 30px;
+        }
+    }
+
+    .single-blog{
+        width: 280px;
+        .blog-content{
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .testimonial-area{
+        .testimonials {
+            display: flex;
+            .single-test{
+                float: none;
+                .test-img{
+                    bottom: 92%;
+                }
+                .test-content{
+                    p {
+                        font-size: 16px;
+                        line-height: 24px;
+                        span{
+                            font-size: 14px;
+                            margin-top: 10px;
+                        }
+                    }
+
+                } 
+            }
+
+        }
+    } 
+ 
+} 
+
+/* ========== Tablet Layout ========== */
+@media only screen and (min-width:768px) and (max-width: 991px){
+    .main{
+        width: 750px;
+    }
+    .section-title-primary{
+        h4{
+            &::before {
+                width: 60px;
+                top: 50%;
+                right: 88%;
+                border-radius: 2px;
+            }
+            &::after {
+                width: 60px;
+                top: 50%;
+                left: 88%;
+                border-radius: 2px;
+    
+            }
+        }
+        p{
+            margin: 0 auto 30px;
+            max-width: 700px;
+            color: $white;
+            
+        }
+       
+    }
+    .banner-area{
+        padding-top: 50px;
+        .banner-content {
+             max-width: 400px;
+             h4{
+                 font-size: 60px;
+             }
+        }
+        .banner-img {
+            max-width: 300px;
+        }
+    } 
+    .working-process{
+        .wp {
+            width: 600px;
+            .single-wp{
+                border-radius: 8px;
+            }
+        }
+    }
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+    }
+    .single-service {
+        float: none;
+        flex-basis: 48%;
+        margin: 0;
+        margin-bottom: 2%;
+    }
+    .cta-left {
+        max-width: 400px;
+    }
+    .blogs{
+        display: flex;
+    } 
+    .single-blog {
+        float: none;
+    }
+    .testimonials{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .single-test{
+        float: none;
+        flex-basis: 100%;
+        margin: 40px 0;
+    }
+    .appointment-area{
+        .section-title-primary{
+            h4{
+                &::before {
+                    width: 30px;
+                    top: 50%;
+                    right: 100%;
+                    border-radius: 2px;
+                }
+                &::after {
+                    width: 30px;
+                    top: 50%;
+                    left: 100%;
+                    border-radius: 2px;
+        }
+            }
+        } 
+    }
+}
+
+/* ========== Mobile Layout ========== */
+@media only screen and (max-width: 767px){
+    .main{
+        width: 300px;
+    }
+    .section-title-primary{
+        h4{
+            &::before {
+                width: 30px;
+                top: 50%;
+                right: 100%;
+                border-radius: 2px;
+            }
+            &::after {
+                width: 30px;
+                top: 50%;
+                left: 100%;
+                border-radius: 2px;
+    }
+        }
+    } 
+    .header{
+        &-top-left{
+            display: none;
+        }
+    }
+    .banner-area{
+        padding-top: 20px;
+        .banner-content {
+             max-width: 280px;
+             margin-bottom: 20px;
+             float: none;
+             h4{
+                 font-size: 40px;
+             }
+        }
+        .banner-img {
+            max-width: 280px;
+            width: 280px;
+            float: none;
+            margin: 0 auto;
+        }
+    } 
+    .about-area{
+        .main{
+            display: block;
+            .about-left{
+                width: 280px;
+                margin-right: 0px;
+                .about-img{
+                    margin-top: 20px;
+                }
+            }
+            .about-right{
+                width: 280px;
+                margin-top: 40px;
+                .about-content{
+                    max-width: 280px;
+                    
+                }
+            }
+        }
+    }
+    .working-process{
+        margin-bottom: 500px;
+        .section-title-primary{
+            h4{
+                font-size: 30px;
+                padding: 0 10px;
+                &::before {
+                    width: 30px;
+                    top: 50%;
+                    right: 90%;
+                    border-radius: 2px;
+                }
+                &::after {
+                    width: 30px;
+                    top: 50%;
+                    left: 90%;
+                    border-radius: 2px;
+        
+                }
+            }
+            p{
+                margin: 0 auto 30px;
+                max-width: 700px;
+                color: $white;
+                
+            }
+           
+        }
+        .wp {
+            width: 280x;
+            flex-direction: column;
+            top: 80%;
+           .single-wp {
+                border-radius: 8px;
+                .wp-icons{
+                    i {
+                        font-size: 30px;
+                      }
+                }
+                .wp-content {
+                    font-size: 14px;
+                  }
+
+              }
+          }
+        
+    } 
+    .single-service{
+        width: 300px;
+        height: 320px;
+        margin: 0 auto 20px;
+    }
+    .cta-content{
+        display: block;
+        .cta-left{
+            margin-bottom: 30px;
+        }
+    }
+    .single-blog{
+        float: none;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .contact-area{
+        .section-title-primary{
+            h4{
+                &::before {
+                    width: 30px;
+                    top: 50%;
+                    right: 100%;
+                    border-radius: 2px;
+                }
+                &::after {
+                    width: 30px;
+                    top: 50%;
+                    left: 100%;
+                    border-radius: 2px;
+        
+                }
+            }
+        }    
+    }
+    .contact{
+        display: block;
+        .contact-left{
+            form{
+                margin-right: 0;
+            }
+        }
+        .contact-right{
+            padding: 8% 2% 8% 10% ;
+        }
+    }
+    .testimonial-area{
+        .section-title-primary{
+            h4{
+                &::before {
+                    width: 30px;
+                    top: 50%;
+                    right: 100%;
+                    border-radius: 2px;
+                }
+                &::after {
+                    width: 30px;
+                    top: 50%;
+                    left: 100%;
+                    border-radius: 2px;
+        
+                }
+            }
+        }  
+        .testimonials{
+            .single-test{
+                float: none;
+                margin: 0 auto 70px;
+                width: 280px;
+                padding: 24px 14px;
+            }
+        }
+        
+    }
+    .doctorpg-banner{
+        .section-title-primary{
+            h4{
+                &::before {
+                    width: 30px;
+                    top: 50%;
+                    right: 90%;
+                    border-radius: 2px;
+                }
+                &::after {
+                    width: 30px;
+                    top: 50%;
+                    left: 90%;
+                    border-radius: 2px;
+        }
+            }
+        } 
+    }
+    .single-doctor {
+        width: 280px;
+        float: none;
+        margin: 0 auto 30px !important;
+    }
+    .appointment-area{
+        .section-title-primary{
+            h4{
+                font-size: 24px;
+                &::before {
+                    width: 30px;
+                    top: 50%;
+                    right: 60%;
+                    border-radius: 2px;
+                }
+                &::after {
+                    width: 30px;
+                    top: 50%;
+                    left: 60%;
+                    border-radius: 2px;
+        }
+            }
+        } 
+    }
+    .appointment-process{
+        .working-process{
+            display: none;
+        }
+    }
+    .appoinment-banner{
+        padding-top: 140px;
+    }
+    .appointment-area{
+        margin-top: 0px;
+        padding-top: 100px;
+    }
+    .appointment-right{
+        margin-top: 150px !important;
+        .doctor-selection{
+            float: none !important;
+            width: 100% !important;
+        }
+    }
+    .footer-area{
+        .footer-links{
+            display: block;
+            .footer-newsletter{
+                padding: 20px;
+                margin-bottom: 40px;
+                .newsletter-box{
+                    input{
+                        padding: 10px 18px;
+                        width: 54%;
+                    }
+                    a{
+                        padding: 10px 20px;
+                    }
+                }
+            }
+            .footer-menu{
+                width: 50%;
+                float: left;
+            }
+            .footer-quicklinks{
+                width: 50%;
+                float: right;
+            }
+            
+        }
+        .footer-copyright{
+            margin-top: 300px;
+        }
+    }
+
+}
+
+
+/* ========== Wide Screen Mobile Layout ========== */
+@media only screen and (min-width:480px) and (max-width: 767px){
+    .main{
+        width: 450px;
+    }
+   
+    
+    
+}
+
+/* =============== Responsive NavBar CSS ================ */
+@media only screen and (max-width: 991px){
+    .header-area{
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .header-bottom-menu{
+        position: relative;
+    }
+    .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: $primary_color;
+   
+    ul{
+        flex-direction: column;
+        width: 250px;
+        
+        
+        li {
+            line-height: 30px;
+            margin: 20px auto;
+            width: 60%;
+            &::before{
+                top: 60%;
+            }
+            
+        }
+        }
+     }
+    .header-area {
+    position: fixed;
+    width: 100%;
+    }
+    #navBar{
+        display: block;
+    }
+}

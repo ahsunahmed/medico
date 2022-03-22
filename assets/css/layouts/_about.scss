@@ -1,0 +1,33 @@
+/* ================== About CSS ==================== */
+.about-area{
+    background-color: $bg;
+    .main{
+        display: flex;
+        .about-left{
+            width: 500px;
+            margin-right: 100px;
+            .about-img{
+                margin-top: 60px;
+                img{
+                    border-radius: 40px 50px 100px 20px;
+                    box-shadow: 25px 27px 0px 0px $primary_color;
+                    
+                }
+            }
+        }
+        .about-right{
+            width: 600px;
+            .about-content{
+                max-width: 600px;
+                > p{
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: $black;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+  

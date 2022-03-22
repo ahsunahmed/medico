@@ -1,0 +1,39 @@
+/* ============= Blog CSS =============== */
+
+.single-blog {
+    float: left;
+    width: 380px;
+    margin-right: 30px;
+    border: 1px solid $border;
+    border-radius: 4px;
+    overflow: hidden;
+    &:last-child {
+        margin-right: 0;
+      }
+    &:hover{
+      .blog-img{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .blog-img{
+      img {
+        transition: 0.3s;
+      }
+    }
+    .blog-content {
+        padding: 20px;
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 24px;
+          }
+      }
+  }
+ 

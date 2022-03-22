@@ -1,0 +1,234 @@
+/* =============== Reset Code =============== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+.fix:after,
+.fix:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    display: inline-block;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+.bg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $bg-grad;
+        z-index: -1;
+    }
+
+}
+/* ============= Margin & Padding ============== */
+@for $i from 1 through 10 {
+    .pt-#{$i * 10}{
+        padding-top: $i * 10px;
+    }
+}
+@for $i from 1 through 10 {
+    .pb-#{$i * 10}{
+        padding-bottom: $i * 10px;
+    }
+}
+@for $i from 1 through 10 {
+    .mt-#{$i * 10}{
+        margin-top: $i * 10px;
+    }
+}
+@for $i from 1 through 10 {
+    .mb-#{$i * 10}{
+        margin-bottom: $i * 10px;
+    }
+}
+
+/* ============= Text Alignment ============ */
+$list: center,left,right,justify;
+@each $i in $list {
+    .text-#{$i}{
+        text-align: $i;
+    }
+}
+
+/* ============== Button CSS ============== */
+.btn{
+    padding: 10px 30px;
+    margin: 10px 0;
+    font-size: 18px;
+    display: inline-block;
+    
+}
+.box-btn{
+    background-color: $title_color;
+    border-radius: 6px;
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    &:hover {
+        background-color: transparent;
+        border: 2px solid $title_color;
+        color: $title_color;
+      }
+    
+}
+
+.appointment-btn {
+    padding: 10px 18px;
+    background: $btn_color;
+    border-radius: 6px;
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    &:hover {
+        background-color: transparent;
+        border: 2px solid $btn_color;
+        color: $btn_color;
+      }
+  }
+
+  /* ========== Section Title CSS ========== */
+.section-title-primary{
+    h4{
+        font-size: 40px;
+        position: relative;
+        color: $title_color;
+        padding: 0 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: $btn_color;
+            height: 6px;
+            width: 80px;
+            top: 50%;
+            right: 100%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background: $btn_color;
+            height: 6px;
+            width: 80px;
+            top: 50%;
+            left: 100%;
+            border-radius: 2px;
+
+        }
+    }
+    p{
+        margin: 0 auto 30px;
+        max-width: 700px;
+        color: $white;
+        
+    }
+   
+}
+.section-title-secondary{
+    h4 {
+        font-size: 45px;
+        font-weight: 900;
+        color: $title_color;
+        margin-bottom: 20px;
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: $btn_color;
+            width: 100px;
+            height: 6px;
+            border-radius: 2px;
+          }
+          
+      }
+    p{
+        color: $black;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+  } 
+
+/* ========== Small Quotation CSS ========== */
+
+.sm-quote {
+    font-size: 15px;
+    margin: 30px 0 0;
+    color: $black;
+    font-weight: 300;
+    a{
+        font-weight: 600;
+        color: $title_color;
+    }
+  }
+  
+  .consult {
+	padding: 80px 0;
+	text-align: center;
+}
+/* ================ NavBar CSS ================*/
+
+#navBar {
+    display: none;
+  i{
+      color: #fff;
+      font-size: 24px;
+      line-height: 33px;
+      transition: 0.8s;
+      &#nav2{
+          display: none;
+      }
+  }
+}
+.menu{
+    transition: .3s;
+}
+/* ========= Scroll Top CSS ========= */  
+.scrollTop {
+	background-color: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 6%;
+	right: 4%;
+	border: 1px solid #333;
+	text-align: center;
+	line-height: 50px;
+	font-size: 30px;
+    z-index: 10;
+}
+.active{
+    border-bottom: 4px solid $title_color;
+}

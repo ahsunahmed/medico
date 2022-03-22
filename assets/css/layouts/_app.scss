@@ -1,0 +1,142 @@
+/* =============== Appointment Page CSS ================= */
+.appointment-process{
+    .working-process{
+        margin: 100px 0;
+        .wp-heading{
+            h4 {
+                margin: 0 auto;
+                display: block;
+                font-size: 28px;
+                color: $black;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+        }
+        .wp {
+            display: flex;
+            flex-basis: 25%;
+            width: 800px;
+            justify-content: space-between;
+            margin: 0 auto 100px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            
+        }
+    }
+}
+.appointment-area{
+    h5 {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+    .appointment-left{
+        .inputs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            input {
+                width: 48%;
+                border: 1px solid $border;
+                padding: 10px;
+                border-radius: 4px;
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+        }
+        
+        .address{
+            margin: 20px 0;
+            h5{
+                font-size: 18px;
+                margin-bottom: 20px;
+              }
+              .adr-select {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                select {
+                    width: 320px;
+                    padding: 8px;
+                    font-size: 18px;
+                    &:last-child {
+                        margin-right: 0;
+                      }
+                  }
+            }
+            
+              input {
+                width: 100%;
+                margin: 20px 0;
+                border: 1px solid $border2;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 4px;
+            }
+            
+        }
+       
+          .app-checkbox {
+            float: left;
+            width: 50%;
+            height: 210px;
+            
+            h4{
+                font-size: 18px;
+                margin: 20px 0;
+            }
+            .check {
+                display: flex;
+                margin-bottom: 10px;
+                label {
+                    flex-basis: 50%;
+                    border-bottom: 1px solid $border;
+                    padding-bottom: 8px;
+                    font-size: 16px;
+                    margin-right: 20px;
+                    
+                  }
+                }
+          }
+        
+    }
+    .appointment-right {
+        width: 100%;
+        margin-top: 40px;
+        .doctor-selection {
+            float: left;
+            width: 50%;
+            select {
+                font-size: 16px;
+                padding: 10px;
+                width: 80%;
+              }
+            label {
+                font-size: 18px;
+                font-weight: 300;
+                display: block;
+                margin: 40px 0 20px;
+              }
+            
+        }
+        textarea {
+            width: 100%;
+            border: 1px solid $border2;
+            height: 200px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 50px;
+            margin-bottom: 40px;
+          }
+
+       
+      }
+    
+    
+}
+
+
+

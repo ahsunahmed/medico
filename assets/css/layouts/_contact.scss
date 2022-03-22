@@ -1,0 +1,67 @@
+/* ============ Contact CSS ============== */
+.contact-area{
+    background-color: $bg;
+}
+.contact {
+    display: flex;
+    .contact-left {
+        flex-basis: 50%;
+        form{
+            margin-right: 20px;
+            input,
+            textarea{
+                width: 100%;
+                border: 1px solid $border;
+                margin-bottom: 10px;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 4px;
+            }
+        }
+        .contact-address{
+            margin-top: 50px;
+            h4 {
+                font-size: 30px;
+                &:before {
+                    height: 4px;
+                  }
+              }
+            p{
+                font-size: 20px;
+                margin-bottom: 18px;
+                i {
+                    font-size: 24px;
+                    margin-right: 10px;
+                    color: #333;
+                  }
+              }
+        }
+      }
+    .contact-right {
+        flex-basis: 50%;
+        padding: 8% 2% 0 10%;
+        h4 {
+            font-size: 40px;
+            color: #fff;
+            font-weight: 300;
+            span {
+                color: $btn_color;
+                font-weight: 600;
+              }
+          }
+        p {
+            font-size: 40px;
+            color: #fff;
+            font-weight: 700;
+            margin: 20px 0;
+          }
+        .sm-quote{
+            p{
+                font-size: 20px;
+            }
+        }
+      }
+  }
+  
+  
+ 
